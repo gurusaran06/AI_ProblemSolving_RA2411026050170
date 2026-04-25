@@ -1,10 +1,10 @@
-# 🗺️ AI Problem Solving — Map Coloring Problem (CSP)
+# AI Problem Solving — Map Coloring Problem (CSP)
 
 > **AI_ProblemSolving** | Problem 5: Map Coloring Problem using Constraint Satisfaction Problem (CSP)
 
 ---
 
-## 📌 Problem Description
+## Problem Description
 
 In a map coloring scenario, different regions on a map must be colored such that **no two adjacent regions share the same color**. This is a classic **Constraint Satisfaction Problem (CSP)** in Artificial Intelligence.
 
@@ -30,7 +30,7 @@ D → Red
 
 ---
 
-## 🧠 Algorithm Used
+## Algorithm Used
 
 ### Constraint Satisfaction Problem (CSP) — Backtracking Search
 
@@ -60,7 +60,7 @@ function BACKTRACKING(assignment, regions, colors, neighbors):
 
 ---
 
-## 🚀 Execution Steps
+## Execution Steps
 
 ### Prerequisites
 
@@ -88,7 +88,7 @@ The app will open in your browser at `http://localhost:8501`
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 AI_ProblemSolving/
@@ -102,7 +102,7 @@ AI_ProblemSolving/
 
 ---
 
-## 🖥️ Sample Output (Screenshots)
+## Sample Output (Screenshots)
 
 ### Input Panel
 - Regions: `A, B, C, D`
@@ -111,7 +111,7 @@ AI_ProblemSolving/
 
 ### Result
 ```
-✅ Solution Found!
+ Solution Found!
 A → Red
 B → Green
 C → Blue
@@ -123,7 +123,7 @@ The app renders a **colored graph** using `networkx` and `matplotlib`, where eac
 
 ---
 
-## 🔧 Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
@@ -134,7 +134,7 @@ The app renders a **colored graph** using `networkx` and `matplotlib`, where eac
 
 ---
 
-## 📚 References
+## References
 
 - Russell, S. & Norvig, P. — *Artificial Intelligence: A Modern Approach* (Chapter 6: CSP)
 - [Streamlit Documentation](https://docs.streamlit.io)
@@ -142,7 +142,7 @@ The app renders a **colored graph** using `networkx` and `matplotlib`, where eac
 
 ---
 
-## 👥 Team Details
+## Team Details
 
 | Field | Details |
 |-------|---------|
@@ -155,6 +155,6 @@ The app renders a **colored graph** using `networkx` and `matplotlib`, where eac
 
 ---
 
-## 📝 License
+## License
 
 This project is submitted as part of an academic assignment. All rights reserved by the respective institution.
