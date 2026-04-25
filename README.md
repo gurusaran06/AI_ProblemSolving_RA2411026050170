@@ -272,7 +272,6 @@ E F 1
 | Team Member 1 | Gurusaran A - RA2411026050170 |
 | Team Member 2 | Richard Antony J - RA2411026050168 |
 | Assignment | AI Problem Solving-Map Colouring and Uniform Cost Search |
-| Problem | Problem 5: Map Coloring (CSP) |
 | Language | Python |
 | Framework | Streamlit |
 | Deadline | 25th April 2026 |
