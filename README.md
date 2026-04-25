@@ -146,8 +146,8 @@ The app renders a **colored graph** using `networkx` and `matplotlib`, where eac
 
 | Field | Details |
 |-------|---------|
-| Team Member 1 | Gurusaran A |
-| Team Member 2 | Richard Antony J |
+| Team Member 1 | Gurusaran A - RA2411026050170 |
+| Team Member 2 | Richard Antony J - RA2411026050168 |
 | Assignment | AI Problem Solving-Map colouring — GitHub Submission |
 | Problem | Problem 5: Map Coloring (CSP) |
 | Language | Python |
