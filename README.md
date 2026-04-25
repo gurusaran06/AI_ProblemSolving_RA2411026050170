@@ -142,13 +142,136 @@ The app renders a **colored graph** using `networkx` and `matplotlib`, where eac
 
 ---
 
+# Uniform Cost Search (UCS) Visualizer
+
+A simple interactive web app built with **Streamlit** that lets you define a weighted graph and find the least-cost path between two nodes using the **Uniform Cost Search** algorithm.
+
+---
+
+## What It Does
+
+- Accepts a weighted graph as plain-text edge definitions
+- Runs Uniform Cost Search from a user-specified start node to a goal node
+- Displays the optimal path and its total cost
+
+---
+
+## Algorithm
+
+**Uniform Cost Search** is a graph traversal algorithm that always expands the lowest-cost node first. It guarantees the optimal (minimum-cost) path in graphs with non-negative edge weights, making it a practical alternative to BFS when edge costs are not uniform.
+
+### How it works
+1. Initialize a priority queue with the start node at cost 0
+2. Pop the node with the smallest cumulative cost
+3. If it's the goal, return the path and cost
+4. Otherwise, push all unvisited neighbors with their updated costs
+5. Repeat until the goal is found or the queue is empty
+
+---
+
+## Requirements
+
+- Python 3.7+
+- `streamlit`
+
+Install dependencies:
+
+```bash
+pip install streamlit
+```
+
+---
+
+## Running the App
+
+```bash
+streamlit run uniform_cost_search.py
+```
+
+Then open your browser at `http://localhost:8501`.
+
+---
+
+## Usage
+
+### Edge Input Format
+
+Enter one edge per line in the format:
+
+```
+<Source> <Destination> <Cost>
+```
+
+**Example:**
+
+```
+A B 1
+A C 4
+B D 2
+C D 1
+D F 3
+B E 5
+E F 1
+```
+
+> Note: The graph is **directed**. To make it undirected, add both directions (e.g., `A B 1` and `B A 1`).
+
+### Fields
+
+| Field      | Description                        | Default |
+|------------|------------------------------------|---------|
+| Start Node | The node to begin the search from  | `A`     |
+| Goal Node  | The target node to reach           | `F`     |
+
+### Output
+
+-  **Path Found** — displays the path (e.g., `A -> B -> D -> F`) and the total cost
+-  **No path found** — shown when the goal is unreachable from the start
+
+---
+
+## Project Structure
+
+```
+.
+└── uniform_cost_search.py   # Main app — algorithm + Streamlit UI
+```
+
+---
+
+## Example
+
+Using the default input:
+
+```
+A B 1
+A C 4
+B D 2
+C D 1
+D F 3
+B E 5
+E F 1
+```
+
+**Start:** `A` → **Goal:** `F`
+
+**Result:** `A -> B -> D -> F` with total cost `6`
+
+---
+
+## Limitations
+
+- Edge weights must be **integers**
+- Only supports **directed** graphs (add reverse edges manually for undirected)
+- No cycle detection beyond the `visited` set (sufficient for non-negative weights)
+
 ## Team Details
 
 | Field | Details |
 |-------|---------|
 | Team Member 1 | Gurusaran A - RA2411026050170 |
 | Team Member 2 | Richard Antony J - RA2411026050168 |
-| Assignment | AI Problem Solving-Map colouring — GitHub Submission |
+| Assignment | AI Problem Solving-Map Colouring and Uniform Cost Search |
 | Problem | Problem 5: Map Coloring (CSP) |
 | Language | Python |
 | Framework | Streamlit |
